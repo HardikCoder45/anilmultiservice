@@ -1,0 +1,164 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="bk.css">
+
+        <script src="./Libraires/sweetalert.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./Libraires/sweetalert.css" />
+      
+
+<title>Form</title>
+    </head>
+    <body>
+        <from id="Form">
+   <div class="form1">
+        <div class="body">
+ 
+            
+        <div class="heading1">
+        <p>This Form is required- </p>
+</div>
+        <div class="form ">
+            <div class="form1">
+            <div class="name">
+                Name
+                </div>
+                 <div class="name1">
+        <Input 
+        Id="name"
+        value=" " 
+        width="200px"
+         
+        />
+         </div>
+
+         <div class="name">
+            Email
+        </div>
+        <div class="Email">
+        <input id="Email" value="" type="email"/>
+        </div>
+        
+
+            <div class="name">
+                  Phone No.
+            </div>
+            <div class="phone_No">
+            <input id="no" value="" maxlength="10" type="tel" minlength="10">
+            </div>
+        </div>
+        <div class="form2"> 
+            <div class="name">
+                 Address
+                </div>
+                
+
+<div class="Address">
+        <Input 
+        Id="adress"
+        value="" 
+        width="100px"
+         />
+        </div>
+
+        <div class="name">
+Meeting Options
+</div>
+
+<div class="meeting_option">
+        
+        <select id="meeting" width="200px">
+            <option value="online">Online</option>
+            <option value="Offline">Offline</option>
+          </select>
+
+</div>
+ 
+
+          <div class="name">
+            Work
+          </div>
+          <div class="work">
+          <input list="Works" name="Work" id="Work" width="200px">
+           </div>
+
+
+          <datalist id="Works">
+            <option value="Wardrobe"></option>
+            <option value="Wooden Modualr kitchen"></option>
+            <option value="Pop Flase Ceiling"></option>
+            <option value="Gypsum false ceiling"></option>
+            <option value="House Interior"> </option>
+            <option value="Office Interior"> </option>
+            <option value="Washroom Renovation"></option> 
+          </datalist>
+
+        
+        <div class="form3">
+<div class="name">
+    Quantity
+    </div>
+         <div class="qun">
+        <input type="number" list="quantity" value="0" width="100px" Id="qun">
+        </div>
+</div>
+    </div>
+        
+    </div>
+
+ 
+    <div class="sumbit1">
+     <image src="./libraries/submit.png"  width="200px" height="125px" onClick="update()"/> 
+ 
+    </div>    
+        </div>
+
+    </div>
+
+</from>
+        <script>
+            
+    
+   
+ 
+function update(){
+
+    const form = document.getElementById("form")
+
+    
+
+    const val1 = document.getElementById("name").value;
+    const val2 = document.getElementById("Email").value;
+    const val3 = document.getElementById("no").value;
+    const val4 = document.getElementById("Work").value;
+    const val5 = document.getElementById("qun").value;
+    const val6 = document.getElementById("meeting").value;
+    const val7 = document.getElementById("adress").value;
+
+
+ 
+
+    if(val1 == "" || val2 == "" || val3 == "" || val4 == "" || val5 == "0" || val6 == "" || val7 == ""){
+     alert("Please Enter All Details")
+
+    }
+    else{
+
+    localStorage.setItem('val1', val1)
+    localStorage.setItem('val2', val2)
+    localStorage.setItem('val3', val3)
+    localStorage.setItem('val4', val4)
+    localStorage.setItem('val5',val5)
+    localStorage.setItem('val6', val6)  
+    localStorage.setItem('val7', val7)  
+    
+    window.location.href = "sumbit.html"
+    }
+   
+}
+
+      
+        </script>
+         
+    </body>
+</html>

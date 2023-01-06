@@ -1,0 +1,217 @@
+<html>
+<head>
+    <title>AnilMultiService</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./Libraires/p5.min.js"></script>
+    <script src="./Libraires/p5.dom.min.js"></script>
+    <script src="./Libraires/p5.play.js"></script>
+    <script src="./Libraires/p5.sound.min.js"></script>
+     
+</head>
+<body>
+
+  <script>
+    const firebaseConfig = {
+  apiKey: "AIzaSyAFfF_aAVyTB_Xdp86HihR1pCG3RURPWCI",
+  authDomain: "anilmultiservice-afefa.firebaseapp.com",
+  projectId: "anilmultiservice-afefa",
+  storageBucket: "anilmultiservice-afefa.appspot.com",
+  messagingSenderId: "871449352407",
+  appId: "1:871449352407:web:4f96cf3868274a4cf17892"
+};
+
+firebase.initializeApp(firebaseConfig);
+    </script>
+
+ <div class="Heading">
+    <h1>AnilMultiService</h1>
+    <div class="b">
+      <div class="e">
+        Good Interior Good Life
+      </div>
+       </div>
+    <div class="follow">
+       
+  <a href="https://www.instagram.com/anilmultiservice/?hl=en">
+<Image src="./libraries/image-removebg-preview.png" width="35px" height="35px"></Image>
+</a>  
+ 
+  <a href="https://hi-in.facebook.com/100076496392043/photos/">
+<Image src="./libraries/image-removebg-preview (1).png" width="30px" height="30px"></Image>
+</a>  
+  <a href="http://127.0.0.1:5500/twitter.html">
+ <Image src="./libraries/image-removebg-preview (2).png" width="30px" height="30px"></Image>
+</a>  
+</div>
+<div class="c" >
+<div>Contact Us On -</div>
+9250005522,9250004422
+</div>
+</div>
+
+<div class="Button">   
+ <main>
+        <Image id="image"    src='./libraries/interior_3.jpg' width="1040px" height="450px" alt="" class="slide">
+          <Image id="Image4" src="./libraries/interior_4.jpg" width="1040px" height="450px" class="slide"></Image>
+         <Image id="Image5"  src="./libraries/interior_5.jpg"  width="1040px" height="450px" class="slide"></Image>
+         <Image id="Image6"  src="./libraries/interior_6.jpg"  width="1040px" height="450px" class="slide"></Image>
+         <Image id="Image4"  src="./libraries/interior_4.jpg"  width="1040px" height="450px" class="slide"></Image>
+        <Image id="Image5"   src="./libraries/interior_5.jpg"   width="1040px" height="450px"  class="slide"></Image>
+        <Image id="Image6"   src="./libraries/interior_6.jpg"   width="1040px" height="450px"  class="slide"></Image>
+        <Image id="Image7"   src="./libraries/interior_7.jpg"   width="1040px" height="450px"   class="slide"></Image>
+         <Image id="Image8"  src="./libraries/kitchen.jpg"     width="1040px" height="450px"   class="slide"></Image>
+         
+        </main>
+          <div class="bt"><Image src="https://o.remove.bg/downloads/e0b7163e-1710-4f31-a6f5-9f70039aeede/image-removebg-preview.png" onclick="goPrev()" width="70" height="70"></Image></div>
+         <div class="bt1"> <Image src="https://o.remove.bg/downloads/a632c0a6-91fb-4443-a779-c517377a270c/image-removebg-preview.png" onclick="goNext()"  width="70" height="70"></Image></div>
+         
+         
+       <script>
+        const slides =  document.querySelectorAll(".slide")
+        var counter = 0;
+
+        slides.forEach(
+        (slide,index)=>{
+          slide.style.left =`${index * 100}%`
+        }
+        )
+        const goPrev = ()=>{
+          counter--
+          slideImage()
+        }
+        const goNext = ()=>{
+          counter++
+          slideImage()
+        }
+        const slideImage = ()=>{
+         slides.forEach(
+          (slide)=>{
+            slide.style.transform = `translateX(-${counter*100}%)`
+          }
+         )
+        }
+        </script>
+</div>
+ 
+  </div>
+<div class="imgs">
+<Image id="Image1" src="./libraries/interior_1.jpg"   width="120px" height="120px"></Image>
+<Image id="Image2" src="./libraries/interior_2.jpg" width="120px" height="120px"></Image>
+<Image id="Image3" src="./libraries/interior_3.jpg"   width="120px" height="120px"></Image>
+<Image id="Image4" src="./libraries/interior_4.jpg"   width="120px" height="120px"></Image>
+<Image id="Image5" src="./libraries/interior_5.jpg"  width="120px" height="120px"></Image>
+<Image id="Image6" src="./libraries/interior_6.jpg"   width="120px" height="120px"></Image>
+<Image id="Image7" src="./libraries/interior_7.jpg"   width="120px" height="120px"></Image>
+<Image id="Image8" src="./libraries/kitchen.jpg"   width="120px" height="120px"></Image>
+</div>
+
+ 
+
+<div class="f">
+<div class="m">Introduction</div>
+<div class="intro">
+Hi! It's AnilMultiService here You get all house interior services ex- painting,false celling,modular kitchen,Wooden almirha etc.
+</div>
+
+
+</div>
+
+
+<div class="work">
+  <div class="celing">
+    <div class="flatu">
+      ...........
+      </div>
+<div class="image1">
+ 
+    <Image id="image1" src="./libraries/Gypsum-false-ceiling.jpg" width="250px" height="250px"></Image>
+   </div>
+ <div class="g">
+ Gypsum False Ceiling
+</div>
+ <div class="K">
+Rate- ₹75/sq-ft
+</div>
+<div class="button2">
+ <a href="http://127.0.0.1:5500/Form.html"><Image src="./libraries/add to cart.png" width="150px" height="40px"></Image></a>
+  </div>
+</div>
+<div class="Modular_Kitchen">
+  <div class="flatu">
+    ...........
+    </div>
+<div class="image1">
+
+  <Image id="image1" src="./libraries/kitchen.jpg" width="250px" height="250px"></Image>
+ </div>
+<div class="g">
+Wooden Modular Kitchen
+</div>
+<div class="K">
+Rate- ₹1100/sq-ft
+</div>
+<div class="button2">
+<a href="http://127.0.0.1:5500/Form.html"><Image src="./libraries/add to cart.png" width="150px" height="40px"></Image></a>
+</div>
+</div>
+<div class="home">
+  <div class="flatu">
+    ...........
+    </div>
+<div class="image1">
+
+  <Image id="image1" src="./libraries/renovation.jpeg" width="250px" height="250px"></Image>
+ </div>
+<div class="g">
+Home Renovation
+</div>
+<div class="K">
+Rate- ₹2000/sq-ft
+</div>
+<div class="button2">
+<a href="http://127.0.0.1:5500/Form.html"><Image src="./libraries/add to cart.png" width="150px" height="40px"></Image></a>
+</div>
+</div>
+<div class="Wardrobe">
+  <div class="flatu">
+    ...........
+    </div>
+<div class="image1">
+
+  <Image id="image1" src="./libraries/wardrobe.jpg" width="250px" height="250px"></Image>
+ </div>
+<div class="g">
+Wardrobe
+</div>
+<div class="K">
+Rate- ₹2000/sq-ft
+</div>
+<div class="button2">
+<a href="http://127.0.0.1:5500/Form.html"><Image src="./libraries/add to cart.png" width="150px" height="40px"></Image></a>
+</div>
+</div>
+<div class="Pop_celing">
+  <div class="flatu">
+    ...........
+    </div>
+<div class="image1">
+
+  <Image id="image1" src="./libraries/wardrobe.jpg" width="250px" height="250px"></Image>
+ </div>
+<div class="g">
+Wardrobe
+</div>
+<div class="K">
+Rate- ₹2000/sq-ft
+</div>
+<div class="button2">
+<a href="http://127.0.0.1:5500/Form.html"><Image src="./libraries/add to cart.png" width="150px" height="40px"></Image></a>
+</div>
+</div>
+
+</div>
+ <div class="details">
+
+ </div>
+</body>
+</html>
